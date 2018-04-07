@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;
+  /*color:#ddd;*/
+  box-sizing: border-box;
+}
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+}
+#root{
+  height: 100%;
+}
+/*----------------head------------------*/
+.head{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+/*--------------------------------menu-----------*/
+.menuswitch{
+  background: #000;
+  opacity: 0;
+  height: 60%;
+  width: 100%;
+  position: fixed;
+  top: 20%;
+  left: 0;
+}
+
+.foot{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.foot .menu{
+  height: 5em;
+  width: 100%;
+  background: rgba(0,0,0,.7);
+}
+.menu ul{
+
+}
+.menu li{
+  width: 33.33%;
+  float: left;
+  list-style: none;
+}
+.menu a{
+  color: #ddd;
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding-top: 2em;
+  text-align: center;
+}
+
+/*-----------------setting---------------*/
+.setting{
+  position: absolute;
+  bottom: 5em;
+  width: 100%;
+  height: 10em;
+  background: rgba(0,0,0,1);
+  color:#ddd;
+  padding: 1em;
+}
+.setting .fontsize{
+  height: 50%;
+}
+.setting .bgcolor button{
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 50%;
+  border-width: 0;
+  margin-right: .5em;
+}
+.bgcolor{
+  position: relative;
+}
+.bgcolor label{
+  margin-right: 2em;
+}
+.bgcolor .buttongroup{
+  display: inline-block;
+  position: absolute;
+  /*top: 50%;*/
+  /*transform: translateY(-50%);*/
+}
+
+.setting .bgcolor button:nth-child(1){
+  background: red;
+}
+.setting .bgcolor button:nth-child(2){
+  background: orange;
+}
+.setting .bgcolor button:nth-child(3){
+  background: blue;
+}
+.setting .bgcolor button:nth-child(4){
+  background: green;
+}
+
+/*---------------------conntent-----------------*/
+.bgcolor,
+.setting,
+.fontsize{
+  border:1px solid #fff;
+}
